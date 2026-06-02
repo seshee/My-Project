@@ -8,6 +8,8 @@
 \usetikzlibrary{calc}
 \usepackage{setspace}
 \usepackage{eso-pic} % حزمة لوضع البوردر في الخلفية
+\usepackage{enumitem}
+\usepackage{changepage}
 
 \definecolor{myblue}{RGB}{0, 70, 140} 
 
@@ -100,11 +102,14 @@
 % 1.4 Research Questions
 {\color{myblue} \Large \bfseries 1.4 Research Questions}
 
-{\color{myblue} \bfseries - Main Research Question:} \\
+{\color{myblue} \bfseries - Main Research Question:} \\ \begin{adjustwidth}{0.7cm}{0cm}
+\vspace{-2.0em}
 In what way could one design and evaluate a blockchain-based system to improve the integration, interoperability, and end-to-end data provenance for medical data in diverse remote health care monitoring IoMT devices?
+\end{adjustwidth}
 
 {\color{myblue} \bfseries - Sub-Question:}
-\begin{itemize}
+\vspace{-1.0em}
+\begin{itemize}[nosep, topsep=0pt, partopsep=0pt]
     \item What are the essential architectural features that should be considered when designing a blockchain-based system to guarantee secure data exchange between diverse IoMT devices for medical use?
     \item What is the performance of the suggested blockchain-based framework regarding data integrity, latency, and throughput in integration with diverse remote IoMT medical devices?
     \item What security risks can be avoided in using a blockchain-based solution compared to classical centralized solutions regarding potential breaches of unauthorized access and data tampering?
