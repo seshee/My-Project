@@ -7,9 +7,16 @@
 \usepackage[default]{tgheros} 
 \usetikzlibrary{calc}
 \usepackage{setspace}
+\usepackage{eso-pic} % حزمة لوضع البوردر في الخلفية
 
 \definecolor{myblue}{RGB}{0, 70, 140} 
 
+% أمر وضع البوردر في كل الصفحات
+\newcommand\DrawBorder{
+    \begin{tikzpicture}[remember picture, overlay]
+        \draw[myblue, thick] ($(current page.north west)+(1cm,-1cm)$) rectangle ($(current page.south east)+(-1cm,1cm)$);
+    \end{tikzpicture}
+}
 \begin{document}
 
 % --- صفحة العنوان ---
@@ -44,6 +51,7 @@
     \vspace{3cm}
 \end{titlepage}
 
+\AddToShipoutPictureBG{\DrawBorder}
 % --- صفحة الفصل الأول ---
 \newpage
 
@@ -62,6 +70,22 @@
     {\color{myblue} \Huge \bfseries INTRODUCTION}
 \end{titlepage}
 
+
+% --- بداية صفحة المحتوى ---
 \newpage
+% ضبط المسافات للنص العادي
+\setlength{\parskip}{1em} 
+
+% 1.1 Background
+{\color{myblue} \Large \bfseries 1.1 Background}
+
+\noindent The emergence of IoMT at an incredible speed has revolutionized the contemporary healthcare industry, enabling real-time patient monitoring through various connected healthcare devices. Such technological innovations enable the acquisition of valuable clinical data, which significantly contributes to optimizing treatment and achieving better patient outcomes. Despite obvious benefits, the extensive deployment of heterogeneous healthcare devices has raised several challenges related to data integration and compatibility across various healthcare systems. Due to the absence of a unified approach to collecting and exchanging clinical data, information silos arise, undermining the effectiveness of diagnostic and decision-making processes. Recently, blockchain technology has emerged as a revolutionary tool capable of addressing important problems in healthcare management. Introducing an innovative blockchain-based data management model makes it possible to overcome current shortcomings in the field, including the protection and security of patient information.
+
+\vspace{0.5cm}
+
+% 1.2 Problem Statement
+{\color{myblue} \Large \bfseries 1.2 Problem Statement}
+
+\noindent The use of medical devices for remotely collecting patient information, including wearable devices and IoT-based diagnostics systems, has resulted in an exponential growth in the amount and diversity of patient-generated data. Presently, the integration of such medical data employs centralized architectures that rely on proprietary and incompatible interfaces, thus resulting in the creation of inherently data-siloed and interoperability-hindered architectures, involving multiple medical devices and platforms as well as various clinical applications. Despite the common use of such centralized architecture models, the current literature still lacks a comprehensive understanding of the need for decentralized, trustless solutions for secure verification, exchange, and management of medical data provenance through end-to-end integrity checks in heterogeneous IoMT settings. Such technological limitations lead to architectural vulnerabilities in the current medical system, putting patient safety at risk and making it highly susceptible to data breach attempts and malicious manipulation attacks that compromise medical records in real time.
 
 \end{document}
