@@ -10,6 +10,8 @@
 \usepackage{eso-pic} % حزمة لوضع البوردر في الخلفية
 \usepackage{enumitem}
 \usepackage{changepage}
+\usepackage{tabularx}
+\usepackage{colortbl}
 
 \definecolor{myblue}{RGB}{0, 70, 140} 
 
@@ -174,6 +176,40 @@ The significance of this study is divided into two major aspects:
     \item For developers and security specialists working with IoMT: This study provides useful information that will help them optimize the suggested framework in the context of resource limitations while preventing malicious attacks on university/clinical facilities.
 \end{itemize}  
 \end{adjustwidth}
+
+
+\vspace{0.5cm}
+% 1.7 Scope and Delimitations of the Study
+{\color{myblue} \Large \bfseries 1.7 Scope and Delimitations of the Study}
+
+\noindent The scope of the study is limited to developing and evaluating a blockchain framework that can improve the process of integrating IoMT devices and making their operations seamless. The research is centered on securing the data exchange process, guaranteeing data integrity, and dealing with interoperability issues in the healthcare industry. Table\ref{tab:scope_delimitation} illustrates the inclusion and exclusion criteria (Delimitations).
+
+\vspace{0.3cm}
+\vspace{0.5cm}
+% 1.7 Scope and Delimitations of the Study
+{\color{myblue} \Large \bfseries 1.7 Scope and Delimitations of the Study}
+
+\noindent The scope of the study is limited to developing and evaluating a blockchain framework that can improve the process of integrating IoMT devices. Table \ref{tab:scope_delimitation} illustrates the inclusion and exclusion criteria (Delimitations).
+
+
+% --- بداية الجدول مع الكابشن والمحاذاة المركزية ---
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.5} % زيادة المسافة العمودية للراحة
+    \caption{Inclusion and Exclusion Criteria (Delimitations)}
+    \vspace{0.3cm}
+    \label{tab:scope_delimitation}
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+        \hline
+        \rowcolor{myblue!20} \bfseries Dimension & \bfseries Included (Within Study) & \bfseries Excluded (Delimitations) \tabularnewline \hline
+        Technology & Blockchain-based IoMT frameworks & Public/Permissionless blockchain scalability solutions \tabularnewline \hline
+        Domain & Healthcare data integration \& Interoperability & General IoT or non-medical industry applications \tabularnewline \hline
+        Devices & Resource-constrained IoMT devices & High-performance enterprise server infrastructure \tabularnewline \hline
+        Environment & Simulated clinical network environments & Real-time clinical patient diagnostic operations \tabularnewline \hline
+    \end{tabularx}
+\end{table}
+
+
 
 
 \end{document}
