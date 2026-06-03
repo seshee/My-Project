@@ -372,6 +372,49 @@ The significance of this study is divided into two major aspects:
 
 
 
+% --- صفحة الفصل الثالث ---
+\newpage
+
+\begin{titlepage}
+    \begin{tikzpicture}[remember picture, overlay]
+        \draw[myblue, thick] ($(current page.north west)+(1cm,-1cm)$) rectangle ($(current page.south east)+(-1cm,1cm)$);
+    \end{tikzpicture}
+
+    \centering
+    \vspace*{10cm}
+    
+    {\color{myblue} \fontsize{30}{36}\selectfont \bfseries CHAPTER 3}
+    
+    \vspace{1cm}
+    
+    {\color{myblue} \Huge \bfseries RESEARCH METHODOLOGY}
+\end{titlepage}
+
+
+
+% --- بداية صفحة المحتوى ---
+\newpage
+% ضبط المسافات للنص العادي
+\setlength{\parskip}{1em} 
+\noindent This chapter will describe the methodological approach used for designing and implementing the suggested IoMT solution, powered by blockchain technology, for integrating medical information. In accordance with the research methodology of computing research paradigm, this chapter describes the experimental setup, explains how the Hyperledger Fabric platform is configured, and presents the method of analysis that can answer the set research questions about interoperability, security, and auditing of remote healthcare systems.
+
+\vspace{0.5cm}
+% 3.1 Research Design and Strategy
+{\color{myblue} \Large \bfseries 3.1 Research Design and Strategy}
+
+\noindent This study employs Simulation-based Experimental Design (Performance Evaluation and Comparative Simulation). This is aimed at evaluating the migration of centralized medicine stock to the proposed decentralized blockchain technology (Hyperledger Fabric).
+
+\textbf{-	Design Translation:}
+\begin{adjustwidth} {0.5cm}{0cm}
+\vspace{-0.5em}
+\begin{itemize}[nosep, topsep=0pt, partopsep=0pt]
+    \item \textbf{Type of Study:} Technical Performance Evaluation.
+    \item \textbf{Unit of Analysis:} “The Medical Transaction Life Cycle” from data collection using IoT device sensors to the blockchain process of validation and immutably storing this information on the ledger.
+    \item \textbf{Experimental Variables:} Influence of security layers in the blockchain technology on performance parameters (Latency, Throughput, and Data Integrity).
+\end{itemize}
+\end{adjustwidth}
+
+
 \bibliographystyle{ieeetr} % نمط الترقيم المعتمد [1], [2]
 \bibliography{references}   
 \end{document}
