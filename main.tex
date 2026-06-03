@@ -12,6 +12,8 @@
 \usepackage{changepage}
 \usepackage{tabularx}
 \usepackage{colortbl}
+\usepackage{longtable}
+
 
 \definecolor{myblue}{RGB}{0, 70, 140} 
 
@@ -196,8 +198,6 @@ The significance of this study is divided into two major aspects:
 \begin{table}[h!]
     \centering
     \renewcommand{\arraystretch}{1.5} % زيادة المسافة العمودية للراحة
-    \caption{Inclusion and Exclusion Criteria (Delimitations)}
-    \vspace{0.3cm}
     \label{tab:scope_delimitation}
     \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{3cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
         \hline
@@ -207,6 +207,7 @@ The significance of this study is divided into two major aspects:
         Devices & Resource-constrained IoMT devices & High-performance enterprise server infrastructure \tabularnewline \hline
         Environment & Simulated clinical network environments & Real-time clinical patient diagnostic operations \tabularnewline \hline
     \end{tabularx}
+        \caption{Inclusion and Exclusion Criteria (Delimitations)}
 \end{table}
 
 \vspace{0.3cm}
@@ -320,6 +321,54 @@ The significance of this study is divided into two major aspects:
 \end{itemize}
 \end{adjustwidth}
 
+
+% --- 2.4	Conceptual Framework ---
+\vspace{0.5cm}
+{\color{myblue} \Large \bfseries 2.4	Conceptual Framework}
+
+\noindent The proposed framework in this study intends to fill these gaps by developing a lightweight blockchain solution intended for securing data provenance in an IoMT context. Through a combination of decentralized consensus algorithms and interoperability standards, it is expected that the proposed architecture will ensure that the integrity of data from devices to the clinical interface will be maintained.
+
+
+% --- 2.5	Comprehensive Literature Matrix ---
+\vspace{0.5cm}
+{\color{myblue} \Large \bfseries 2.5	Comprehensive Literature Matrix}
+
+\noindent In order to present a complete review of the existing literature and understand the connections among relevant studies, the following literature matrix has been prepared, as illustrated in Table \ref{tab:Literature_Matrix}. The purpose of the literature matrix is to present fourteen relevant studies in a structured format, providing an insight into the research environment of each of these papers and highlighting their key variables and contributions to the identification of knowledge gaps in the research. Through such analysis, existing trends and challenges can be observed.
+\vspace{0.3cm}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{longtable}{|>{\centering\arraybackslash}p{0.7cm}|>{\centering\arraybackslash}p{2.7cm}|>{\centering\arraybackslash}p{2.7cm}|>{\centering\arraybackslash}p{2.7cm}|>{\centering\arraybackslash}p{4.5cm}|}
+    
+    % رأس الجدول في الصفحة الأولى
+    \hline
+    \rowcolor{myblue!20} \bfseries Ref. & \bfseries Focus/Context & \bfseries Method & \bfseries Key Variables & \bfseries Gap addressed/Contribution \tabularnewline \hline
+    \endfirsthead
+
+    % رأس الجدول في الصفحات التالية
+    \hline
+    \rowcolor{myblue!20} \bfseries Ref. & \bfseries Focus/Context & \bfseries Method & \bfseries Key Variables & \bfseries Gap addressed/Contribution \tabularnewline \hline
+    \endhead
+
+    % محتوى الجدول
+    \cite{ref1} & Access Control & Framework & Privacy & Effective access control (Fortified-Chain) \tabularnewline \hline
+    \cite{ref2} & Fog Computing & Framework & Authentication & Lightweight group authentication \tabularnewline \hline
+    \cite{ref3} & Performance & Deep Learning & Optimization & Energy-efficient processing \tabularnewline \hline
+    \cite{ref4} & Healthcare 5.0 & Federated Learning & Integration & Blockchain-Federated learning link \tabularnewline \hline
+    \cite{ref5} & IoMT Overview & Review & Connectivity & Foundation for IoMT architecture \tabularnewline \hline
+    \cite{ref6} & Interoperability & Systematic Review & Standards & Highlighted lack of standardization \tabularnewline \hline
+    \cite{ref7} & Blockchain-IoMT & Review & Security/Trust & Theoretical basis for decentralization \tabularnewline \hline
+    \cite{ref8} & Device Connectivity & Empirical & Integration & Blockchain-IoMT enablement \tabularnewline \hline
+    \cite{ref9} & E-healthcare & Framework & Monitoring & Security for e-health networks \tabularnewline \hline
+    \cite{ref10} & Integration & Empirical & Interoperability & Medical data integration focus \tabularnewline \hline
+    \cite{ref11} & Blockchain-IoMT & Review & Security/Trust & Theoretical basis for decentralization \tabularnewline \hline
+    \cite{ref12} & Scalability & Survey & Performance & Addressed scalability bottlenecks \tabularnewline \hline
+    \cite{ref13} & Edge Networks & Empirical & Security & Edge-based security mechanisms \tabularnewline \hline
+    \cite{ref14} & Neuro-stimulation & Secure Framework & Data Integrity & Specialized device monitoring \tabularnewline \hline
+    
+    % الكابشن يوضع داخل البيئة في longtable
+    \caption{Comprehensive Literature Matrix}
+    \label{tab:Literature_Matrix}
+\end{longtable}
 
 
 
