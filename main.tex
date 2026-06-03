@@ -415,6 +415,40 @@ The significance of this study is divided into two major aspects:
 \end{adjustwidth}
 
 
+\vspace{0.5cm}
+% 3.2 Experimental Environment
+{\color{myblue} \Large \bfseries 3.1 Research Design and Strategy}
+
+\noindent For achieving reproducibility following department guidelines, the technical setup is described as follows:
+
+\textbf{-	Operating System:}
+\begin{adjustwidth}{0.9cm}{0cm}
+   \vspace{-1.0em} 
+   Ubuntu 24.04.1 LTS 
+\end{adjustwidth}
+
+\textbf{-	Environment:} 
+\begin{adjustwidth}{0.9cm}{0cm}
+\vspace{-1.0em} 
+   Docker containers for orchestrating a Hyperledger Fabric network consisting of Peer Nodes, Ordering Service, and Certificate Authority (CA) 
+\end{adjustwidth}
+
+\textbf{-	Blockchain Core:} 
+\begin{adjustwidth}{0.9cm}{0cm}
+\vspace{-1.0em}
+   Hyperledger Fabric. Major configurations include: 
+\end{adjustwidth}
+
+\begin{adjustwidth} {0.5cm}{0cm}
+\vspace{-1.0em}
+\begin{itemize}[nosep, topsep=0pt, partopsep=0pt]
+    \item \textbf{MSP (Membership Service Provider):} Cryptographic material implementation for handling identities.
+    \item \textbf{TLS (Transport Layer Security):} Applied on a channel basis to enable secure transfer between peers.
+    \item \textbf{Smart Contracts (Chaincode):} Developed custom logic coded in Go/Node.js for schema validation of health data (HL7 FHIR).
+\end{itemize}
+\end{adjustwidth}
+
+
 \bibliographystyle{ieeetr} % نمط الترقيم المعتمد [1], [2]
 \bibliography{references}   
 \end{document}
