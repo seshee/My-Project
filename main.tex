@@ -528,6 +528,24 @@ The significance of this study is divided into two major aspects:
 \end{adjustwidth}
 
 
+\vspace{0.5cm}
+% 3.7 Mapping Summary
+{\color{myblue} \Large \bfseries 3.7 Mapping Summary}
+\renewcommand{\arraystretch}{1.5} % للحفاظ على نفس المسافات
+\begin{table}[htbp]
+    \centering
+
+    \label{tab:mapping_summary}
+    \begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}p{2.5cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|}
+        \hline
+        \rowcolor{myblue!20} \bfseries Category & \bfseries Variable & \bfseries Operational Definition & \bfseries Purpose \\ \hline
+        Independent & Network Load & Number of concurrent IoMT transactions & Evaluation of scalability \\ \hline
+        Dependent & Latency & Time to commit to the Ledger & Efficiency assessment \\ \hline
+        Control & Environment & Docker/Ubuntu host configuration & Reproducibility \\ \hline
+    \end{tabularx}
+        \caption{Mapping Summary}
+\end{table}
+
 \bibliographystyle{ieeetr} % نمط الترقيم المعتمد [1], [2]
 \bibliography{references}   
 \end{document}
